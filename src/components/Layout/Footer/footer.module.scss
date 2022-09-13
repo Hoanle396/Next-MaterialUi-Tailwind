@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid #0d1546;
+  padding: 1rem 0;
+
+  & .logo {
+    background: -webkit-linear-gradient(315deg, #dc3545 25%, #0d6efd);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    & img {
+      width: 250px;
+      object-position: top center;
+      object-fit: cover;
+      // height: 200px;
+    }
+  }
+
+  & .option {
+    margin: 0;
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  & .copyright {
+    & small {
+      font-size: 14px;
+      color: rgba(13, 21, 70, 0.65);
+    }
+  }
+}
