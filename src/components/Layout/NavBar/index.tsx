@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from "react";
 import { navLinks } from "../../../constants";
 
 const Navbar = () => {
-   const [active, setActive] = useState("Home");
+   const router = useRouter();
    const [toggle, setToggle] = useState(false);
 
    return (
@@ -14,12 +15,12 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
                <li
                   key={nav.id}
-                  className={`font-poppins cursor-pointer text-[20px] font-medium rounded-3xl shadow-xl px-6 py-2 hover:bg-slate-200 ${active === nav.title ? "text-green-500 bg-slate-100" : "text-purple-500"
+                  className={`font-poppins cursor-pointer text-[20px] font-medium rounded-3xl shadow-xl px-6 py-2 hover:bg-slate-200
+                   ${router.pathname === nav.id ? "text-green-500 bg-slate-100" : "text-purple-500"
                      } ${index === navLinks.length - 1 ? "mr-0" : "mr-5"}`}
-                  onClick={() => setActive(nav.title)}
                >
                   <Link
-                     href={`#${nav.id}`}
+                     href={nav.id}
                   >{nav.title}
                   </Link >
                </li>
@@ -38,10 +39,10 @@ const Navbar = () => {
                   {navLinks.map((nav, index) => (
                      <li
                         key={nav.id}
-                        className={`font-poppins font-medium cursor-pointer text-[20px]  ${active === nav.title ? "text-green-500" : "text-purple-500"} ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                        onClick={() => setActive(nav.title)}
+                        className={`font-poppins font-medium cursor-pointer text-[20px]
+                          ${router.pathname === nav.id ? "text-green-500" : "text-purple-500"} ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                      >
-                        <a href={`#${nav.id}`}>{nav.title}</a>
+                        <a href={nav.id}>{nav.title}</a>
                      </li>
                   ))}
                </ul>

@@ -1,5 +1,4 @@
 
-import { useRouter } from "next/router";
 import React from "react";
 import { PageTransition } from "../PageTransition";
 import Footer from "./Footer";
@@ -8,16 +7,12 @@ import Navbar from "./NavBar";
 interface LayoutProps {
    children?: React.ReactNode;
    showCircles?: boolean;
-   title?: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({
    children,
-   showCircles,
-   title
+   showCircles
 }) => {
-   const router = useRouter();
-
    return (
       <div className={`${showCircles && "overflow-hidden"}`}>
          <Navbar />
