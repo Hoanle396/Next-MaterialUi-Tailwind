@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className="w-10/12 flex py-6 mx-auto justify-between items-center navbar">
          <img src="/assets/elearning.png" alt="" className="w-[48px] h-[48px]" />
 
-         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+         <ul className="list-none md:flex hidden justify-end items-center flex-1">
             {navLinks.map((nav, index) => (
                <li
                   key={nav.id}
@@ -26,7 +26,7 @@ const Navbar = () => {
             ))}
          </ul>
 
-         <div className="sm:hidden flex flex-1 justify-end items-center">
+         <div className="md:hidden flex flex-1 justify-end items-center z-50">
             <div onClick={() => setToggle(!toggle)}>
                {toggle ? <img src="/assets/cancel.png" alt="" className="w-[28px] h-[28px] object-contain" /> : <img src="/assets/menu.png" alt="" className="w-[28px] h-[28px] object-contain" />}
             </div>
@@ -38,8 +38,7 @@ const Navbar = () => {
                   {navLinks.map((nav, index) => (
                      <li
                         key={nav.id}
-                        className={`font-poppins font-medium cursor-pointer text-[16px]  ${active === nav.title ? "text-green-500" : "text-purple-500"
-                           } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                        className={`font-poppins font-medium cursor-pointer text-[20px]  ${active === nav.title ? "text-green-500" : "text-purple-500"} ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                         onClick={() => setActive(nav.title)}
                      >
                         <a href={`#${nav.id}`}>{nav.title}</a>
