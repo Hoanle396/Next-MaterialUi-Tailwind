@@ -1,6 +1,5 @@
+import Link from 'next/link';
 import { useState } from "react";
-import Link from 'next/link'
-import { Google, Mail, Password } from "../../icons";
 import { navLinks } from "../../../constants";
 
 const Navbar = () => {
@@ -9,13 +8,13 @@ const Navbar = () => {
 
    return (
       <nav className="w-10/12 flex py-6 mx-auto justify-between items-center navbar">
-         <Google className="w-[32px] h-[32px]" />
+         <img src="/assets/elearning.png" alt="" className="w-[48px] h-[48px]" />
 
          <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             {navLinks.map((nav, index) => (
                <li
                   key={nav.id}
-                  className={`font-poppins cursor-pointer text-[18px] font-medium rounded-3xl shadow-xl px-4 py-1 ${active === nav.title ? "text-green-500" : "text-purple-500"
+                  className={`font-poppins cursor-pointer text-[20px] font-medium rounded-3xl shadow-xl px-6 py-2 hover:bg-slate-200 ${active === nav.title ? "text-green-500 bg-slate-100" : "text-purple-500"
                      } ${index === navLinks.length - 1 ? "mr-0" : "mr-5"}`}
                   onClick={() => setActive(nav.title)}
                >
@@ -29,7 +28,7 @@ const Navbar = () => {
 
          <div className="sm:hidden flex flex-1 justify-end items-center">
             <div onClick={() => setToggle(!toggle)}>
-               {toggle ? <Google className="w-[28px] h-[28px] object-contain" /> : <Password className="w-[28px] h-[28px] object-contain" />}
+               {toggle ? <img src="/assets/cancel.png" alt="" className="w-[28px] h-[28px] object-contain" /> : <img src="/assets/menu.png" alt="" className="w-[28px] h-[28px] object-contain" />}
             </div>
             <div
                className={`${!toggle ? "hidden" : "flex"

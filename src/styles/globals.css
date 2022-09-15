@@ -1,3 +1,18 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.circle-background {
+  overflow: hidden;
+  background: radial-gradient(
+    closest-side,
+    rgba(45, 212, 191, 1),
+    rgba(233, 168, 2, 0)
+  );
+  z-index: -1;
+}
+.circle-background-2 {
+  overflow: hidden;
+  background: radial-gradient(closest-side, #a855f7, rgba(233, 168, 2, 0));
+  z-index: -1;
+}
