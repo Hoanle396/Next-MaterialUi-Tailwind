@@ -17,7 +17,7 @@ const Login: NextPage = () => {
                <span className="text-teal-500">iEdu</span>
             </h2>
             <div className="mt-8 flex lg:mt-16 justify-center">
-               <Card className='shadow-2xl p-10 rounded-3xl bg-transparent w-[464px] h-[484px]'>
+               <Card className='shadow-2xl p-2 md:p-10 rounded-3xl bg-transparent w-[464px] h-[auto]'>
                   <span className="text-3xl text-purple-700 font-bold">Sign In</span>
                   <span className="text-lg text-slate-500 font-medium mb-6">Login to manage your account</span>
                   <CardBody>
@@ -26,7 +26,7 @@ const Login: NextPage = () => {
                   </CardBody>
                   <CardFooter className='flex flex-col items-center'>
                      <button type="submit" className="text-white bg-gradient-to-r from-teal-200 via-teal-400 to-teal-600 hover:bg-gradient-to-br border border-gray-300 text-xl font-semibold rounded-2xl block w-full p-3 mb-5 shadow-xl">Login</button>
-                     <span className="text-lg text-slate-500 font-medium mb-6">{"Don\'t have account?"} <Link href='/register'>Register</Link></span>
+                     <span className="text-lg text-slate-500 font-medium">{"Don\'t have account?"} <Link href='/register'>Register</Link></span>
                   </CardFooter>
                </Card>
             </div>
