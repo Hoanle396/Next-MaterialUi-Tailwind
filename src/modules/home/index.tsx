@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
 import Layout from '../../components/Layout'
+import Banner from './Banner'
 
 const Home: NextPage = () => {
   return (
     <Layout showCircles>
+      <Banner />
       <div
         className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8"
       >
