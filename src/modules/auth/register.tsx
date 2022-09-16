@@ -6,7 +6,7 @@ import Layout from '../../components/Layout'
 
 const Register: NextPage = () => {
    return (
-      <Layout showCircles>
+      <Layout showBackground>
          <div
             className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8"
          >
