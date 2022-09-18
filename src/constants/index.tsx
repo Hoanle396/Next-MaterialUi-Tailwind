@@ -1,3 +1,5 @@
+import { airbnb, binance, coinbase, dropbox } from "../assets";
+
 export const navLinks = [
   {
     id: "/",
@@ -62,5 +64,23 @@ export const stats = [
     id: "stats-3",
     title: "Transaction",
     value: "$230M+",
+  },
+];
+export const clients = [
+  {
+    id: "client-1",
+    logo: "/assets/airbnb.png",
+  },
+  {
+    id: "client-2",
+    logo: "/assets/binance.png",
+  },
+  {
+    id: "client-3",
+    logo: "/assets/coinbase.png",
+  },
+  {
+    id: "client-4",
+    logo: "/assets/dropbox.png",
   },
 ];
