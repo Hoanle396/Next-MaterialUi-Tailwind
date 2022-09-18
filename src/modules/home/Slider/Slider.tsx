@@ -14,7 +14,7 @@ export const Slider = () => {
     >
       <Marquee
         direction='rtl'
-        velocity={30}
+        velocity={20}
         scatterRandomly={false}
         resetAfterTries={100}
         onInit={() => {
