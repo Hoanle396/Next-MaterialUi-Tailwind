@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/material';
 import type { AppProps } from 'next/app';
 import { FC, useState } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import { theme } from '../themes';
 
 const queryClientOption = {

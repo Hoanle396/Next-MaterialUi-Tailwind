@@ -4,7 +4,7 @@ const Footer = () => {
    return (
       <footer className={styles.footer}>
          <Grid container pt={2} spacing={2}>
-            <Grid item lg={3} sm={6}
+            <Grid item lg={3} sm={6} xs={12}
                mb={{ md: 0, sm: 4 }}
                display="flex"
                justifyContent="center"
@@ -13,7 +13,7 @@ const Footer = () => {
             >
                <h1 className={`${styles.logo} text-5xl font-bold`}>iEdu</h1>
             </Grid>
-            <Grid item lg={3} sm={6}
+            <Grid item lg={3} sm={6} xs={12}
                mb={{ md: 0, sm: 4 }}
                display="flex"
                justifyContent="center"
@@ -29,7 +29,7 @@ const Footer = () => {
                   </ListItem>
                </List>
             </Grid>
-            <Grid item lg={3} sm={6}
+            <Grid item lg={3} sm={6} xs={12}
                mb={{ md: 0, sm: 4 }}
                display="flex"
                justifyContent="center"
@@ -45,7 +45,7 @@ const Footer = () => {
                   </ListItem>
                </List>
             </Grid>
-            <Grid item lg={3} sm={6}
+            <Grid item lg={3} sm={6} xs={12}
                mb={{ md: 0, sm: 4 }}
                display="flex"
                justifyContent="center"
@@ -65,7 +65,7 @@ const Footer = () => {
 
          <Grid container mt={4} className={styles.copyright}>
             <Grid item sm={12} display='flex' flexDirection="column" alignItems='center'>
-               <small className='block fs-6'>
+               <small className='block fs-6 text-center'>
                   VIETNAM-KOREA UNIVERSITY OF INFORMATIONAND COMMUNICATION TECHNOLOGY{' '}
                </small>{' '}
                <br />
