@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Layout from '../../components/Layout'
 import Banner from './Banner'
 import Clients from './Clients'
+import Courses from './Courses'
 import CTA from './CTA'
 import Introduction from './Introduction'
 import { Slider } from './Slider/Slider'
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       />
       <Clients />
       <Slider />
+      <Courses />
       <CTA />
     </Layout>
   )
