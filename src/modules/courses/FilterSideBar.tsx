@@ -10,7 +10,7 @@ const FilterSideBar: FC<Props> = () => {
    return (
       <>
          <Box
-            className={open ? 'hidden' : 'block'}
+            className={open ? 'hidden' : 'flex'}
             sx={{
                cursor: 'pointer',
                position: "fixed",

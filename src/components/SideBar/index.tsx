@@ -11,7 +11,7 @@ interface Props {
 }
 
 const FakeBar = styled(Box, { shouldForwardProp: (p) => p !== 'show' })<{ show?: boolean }>(({ theme, show }) => ({
-   width: 10,
+   width: 0,
    height: '100vh',
    position: 'fixed',
    right: 0,
