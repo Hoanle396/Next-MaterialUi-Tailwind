@@ -5,7 +5,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const themeConstants = {
   paper: '#F9F9F9',
   primary: {
-    main: '#3B82F6',
+    main: "#9637EA",
     dark: '#e5e5e5',
   },
   secondary: {
@@ -16,7 +16,7 @@ const themeConstants = {
     main: '#b22222',
     dark: '#8b0000',
   },
-  fg: { main: '#fff', dark: 'rgba(55, 65, 81, 1)' },
+  fg: { main: '#9637EA', dark: 'rgba(55, 65, 81, 1)' },
   breakpoints: {
     xs: '0px',
     mb: '350px',
