@@ -9,24 +9,26 @@ const FilterSideBar: FC<Props> = () => {
    const [open, toggleOpen] = useToggle(false);
    return (
       <>
-         <Box
-            className={open ? 'hidden' : 'flex'}
-            sx={{
-               cursor: 'pointer',
-               position: "fixed",
-               height: 150,
-               zIndex: 1999,
-               top: "45%",
-               display: 'flex',
-               alignItems: 'center',
-               paddingBottom: 3,
-               paddingTop: 3,
-               borderRight: 1,
-               borderTopRightRadius: 50,
-               borderBottomRightRadius: 50,
-            }}
-            onClick={toggleOpen} >
-            <Typography variant="body1" sx={{ writingMode: 'vertical-lr' }}>Show Filters</Typography>
+         <Box style={{ position: 'relative', height: '100%' }}>
+            <Box
+               className={open ? 'hidden' : 'flex'}
+               sx={{
+                  cursor: 'pointer',
+                  position: "fixed",
+                  height: 150,
+                  zIndex: 1999,
+                  top: "45%",
+                  display: 'flex',
+                  alignItems: 'center',
+                  paddingBottom: 3,
+                  paddingTop: 3,
+                  borderRight: 1,
+                  borderTopRightRadius: 50,
+                  borderBottomRightRadius: 50,
+               }}
+               onClick={toggleOpen} >
+               <Typography variant="body1" sx={{ writingMode: 'vertical-lr' }}>Show Filters</Typography>
+            </Box>
          </Box>
          <StyledSideBar anchor="left" open={open} toggleOpen={toggleOpen}>
             <Box style={{ position: 'relative', height: '100%' }}>
