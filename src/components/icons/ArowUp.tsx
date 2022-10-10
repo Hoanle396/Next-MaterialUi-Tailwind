@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ArowUp: React.FC<{ className: string }> = ({ className }) => {
+const ArowUp: React.FC<{ className?: string }> = ({ className }) => {
    return (
       <svg width="22" height="21" viewBox="0 0 22 21" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M4.98978 15.2615C4.75588 14.9828 4.76972 14.5786 5.00787 14.3167L5.07837 14.2489L16.0903 5.00887C16.3943 4.75371 16.8477 4.79338 17.1029 5.09746C17.3367 5.37621 17.3229 5.78038 17.0848 6.04234L17.0143 6.11006L6.00238 15.3501C5.69829 15.6053 5.24494 15.5656 4.98978 15.2615Z" fill="white" />
