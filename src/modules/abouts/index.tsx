@@ -228,12 +228,12 @@ const Abouts: NextPage = () => {
                <div className="container w-full">
                   <div className="flex justify-center mx-3">
                      <div className="w-full md:w-3/4 lg:w-2/3">
-                        <h4 className="mb-3 text-teal-600 font-bold text-lg" data-wow-delay="0.3s">Start For Free</h4>
-                        <p className="mb-4 text-gray-600 leading-loose text-md " data-wow-delay="0.6s">Existing customized ideas through client-based deliverables. <br /> Compellingly unleash fully tested outsourcing</p>
+                        <h4 className="mb-3 text-teal-600 font-bold text-2xl" data-wow-delay="0.3s">Start For Free</h4>
+                        <p className="mb-4 text-gray-600 leading-loose text-lg " data-wow-delay="0.6s">Existing customized ideas through client-based deliverables. <br /> Compellingly unleash fully tested outsourcing</p>
                         <form >
                            <div className="wow fadeInDown" data-wow-delay="0.3s">
                               <input type="Email" className="w-full mb-5 bg-white border border-blue-300 rounded-full px-5 py-3 duration-300 focus:border-blue-600 outline-none" name="email" placeholder="Email Address" />
-                              <button className="border-0 bg-blue-600 text-white rounded-full w-24 h-24 duration-300 hover:opacity-75" type="submit">Send</button>
+                              <button className="border-0 bg-blue-600 text-white text-lg rounded-full w-20 h-20 duration-300 hover:opacity-75" type="submit">Send</button>
                            </div>
                         </form>
                      </div>
@@ -318,7 +318,7 @@ const Abouts: NextPage = () => {
                <div className="mx-6 mb-6">
                   <div className="flex">
                      <div className="w-full">
-                        <object style={{ border: 0, height: 450, width: "100%" }} data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
+                        <object style={{ border: 0, height: 450, width: "100%" }} data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15342.60758556704!2d108.25318802357172!3d15.979545017555623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1665465835981!5m2!1svi!2s"></object>
                      </div>
                   </div>
                </div>
