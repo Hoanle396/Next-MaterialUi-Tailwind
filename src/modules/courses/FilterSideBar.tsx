@@ -35,8 +35,28 @@ const FilterSideBar: FC<Props> = () => {
             <Typography variant="h5" sx={{ my: 3 }}>Price Range</Typography>
             <Typography variant="body2">Equivalent USD Value</Typography>
             <Stack direction="row" justifyContent="space-between" mt={3} spacing={1}>
-               <TextField label="Min" fullWidth size='small' name="min" type="number" />
-               <TextField label="Max" fullWidth size='small' name="max" type="number" />
+               <TextField
+                  label="Min"
+                  fullWidth
+                  size='small'
+                  name="min"
+                  InputProps={{
+                     inputProps: {
+                        max: 100, min: 0
+                     }
+                  }}
+                  type="number" />
+               <TextField
+                  label="Max"
+                  fullWidth
+                  size='small'
+                  name="max"
+                  InputProps={{
+                     inputProps: {
+                        max: 100, min: 0
+                     }
+                  }}
+                  type="number" />
             </Stack>
             <Divider sx={{ my: 2 }} />
             <Typography variant="h5" sx={{ my: 3 }}>Artwork type</Typography>
